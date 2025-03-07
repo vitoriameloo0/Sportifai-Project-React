@@ -1,3 +1,5 @@
+import "../styles/Menu.css";
+
 import Carousel from "./Carousel";
 
 const Home = () => {

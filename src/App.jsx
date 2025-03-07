@@ -8,9 +8,7 @@ import Servicos from "./components/Servicos";
 import Recursos from './components/Recursos';
 import Footer from './components/Footer';
 import Login from './components/Login';
-import './App.css'
-
-
+import Cadastro from "./components/Cadastro";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +33,7 @@ function App() {
         
         {/* A rota para a página de login (sem Navbar e Footer) */}
         <Route path="/login" element={<Login />} />
+        <Route  path="/cadastro" element={<Cadastro />} />
       </Routes>
     </Router>
   )

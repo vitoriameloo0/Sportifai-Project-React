@@ -1,3 +1,5 @@
+import "../styles/Menu.css";
+
 const Carousel = () => {
     return (
       <div id="carousel-spotify" className="carousel slide" data-bs-ride="carousel">

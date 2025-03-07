@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from "../assets/sport.svg"; // Importe o logo
 import { Link } from "react-router-dom"; // Importe o Link do React Router
+import "../styles/Menu.css";
 
 const Navbar = () => {
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item divisor"></li>
             <li className="nav-item">
-              <a href="/inscrever" className="nav-link">Inscrever-se</a>
+              <Link to="/cadastro" className="nav-link">Inscrever-se</Link>
             </li>
             <li className="nav-item">
               <Link to="/login" className="nav-link">Entrar</Link> 

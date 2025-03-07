@@ -1,3 +1,5 @@
+import "../styles/Menu.css";
+
 const Servicos = () => {
   return (
     <section id="servicos" className="caixa">

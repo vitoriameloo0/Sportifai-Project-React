@@ -1,3 +1,5 @@
+import "../styles/Menu.css";
+
 const Modal = () => {
     return (
       <div className="modal fade" id="infoModal" tabIndex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">

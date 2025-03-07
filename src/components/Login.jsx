@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import logo from "../images/icon.png";
 import app from "../App.jsx";
 import "../styles/Login.css";
+import { trocarImagem, voltaImagem, verificarCamposPreenchidosLogin } from "../utils/functions.js";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [logoSrc, setLogoSrc] = useState(logo);  // Adiciona o estado para logo
 
   const handleLogin = () => {
-    if (email && password) {
-      alert("Login realizado com sucesso!");
-    } else {
-      alert("Preencha todos os campos!");
-    }
+    // Passa os valores de email e senha para a função de verificação
+    verificarCamposPreenchidosLogin(email, password);
   };
 
   return (
@@ -20,13 +19,13 @@ const Login = () => {
       <div className="container-fluid">
         <div className="col">
           <div id="logologin">
-            <a href= {app}>
-              <img
+            <a href={app}>
+            <img
                 id="logo"
-                src={logo}
-                width="65"
-                onmouseover="trocarImagem()"
-                onmouseout="voltaImagem()"
+                src={logoSrc}
+                width="80"
+                onMouseOver={() => trocarImagem(setLogoSrc)}
+                onMouseOut={() => voltaImagem(setLogoSrc)}
               />
             </a>
             <h1>Login</h1>
@@ -44,6 +43,7 @@ const Login = () => {
           />
 
           <br />
+          <br />
           <label htmlFor="password">Senha</label>
           <input
             type="password"
@@ -55,7 +55,8 @@ const Login = () => {
           />
 
           <br />
-          <button type="button" onClick={handleLogin}>
+          <br />
+          <button type="button" onClick={handleLogin} class="bt-enviar">
             Enviar
           </button>
         </div>

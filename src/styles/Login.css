@@ -1,11 +1,12 @@
 body {
-    background: url(../imagens/capa.png),
-        url(../imagens/ruido.png),
+    background: url(..images/capa.png),
+        url(../images/ruido.png),
         linear-gradient(50deg, #ff4169, #7c26f8);
-
+  
     background-attachment: fixed;   
     font-family: Arial, Helvetica, sans-serif;
 }
+  
 
 /* Configuração dos inputs da tela*/
 input {
@@ -44,11 +45,20 @@ button:hover {
 label {
     display: inline-block;
     margin-bottom: .5rem;
-    text-align:start;
+    text-align: start;
 }
 
 label element.style {
     text-align:start;
+}
+
+/*Configuração do h1 da tela de login*/
+h1{
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 20px;
+    color: #000000;
+    margin: 0;
 }
 
 /* Configuração da linha roxa que aparece na tela após o h1*/
@@ -58,7 +68,7 @@ h1::after{
     width: 3rem;
     height: 0.3rem;
     background-color: #6c63ff;
-    margin: 0 auto;
+    margin: 10px auto 0;
     position: absolute;
     border-radius: 10px ;
 }
@@ -80,7 +90,8 @@ h1::after{
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    gap: 10px;
+    gap: 10px; 
+    position: relative;
 }
 
 /*Configuração do botão de enviar*/
@@ -88,11 +99,3 @@ h1::after{
     color: white;
 }
 
-/*Configuração do h1 da tela de login*/
-h1{
-    font-weight: 900;
-    letter-spacing: -0.05em;
-    margin-bottom: 50px;
-    color: #000000;
-    margin: 0;
-}
