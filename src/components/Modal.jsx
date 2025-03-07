@@ -1,11 +1,13 @@
 const Modal = () => {
     return (
       <div className="modal fade" id="infoModal" tabIndex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div className="modal-dialog">
+        <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="infoModalLabel">Informações do Sportifai Free</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div className="modal-body">
               <p>Sportifai Free oferece uma ampla gama de músicas para você ouvir sem custo.</p>

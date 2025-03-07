@@ -19,10 +19,12 @@ const Carousel = () => {
           </div>
         </div>
         <a className="carousel-control-prev" href="#carousel-spotify" role="button" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon"></span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          
         </a>
         <a className="carousel-control-next" href="#carousel-spotify" role="button" data-bs-slide="next">
-          <span className="carousel-control-next-icon"></span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          
         </a>
       </div>
     );
